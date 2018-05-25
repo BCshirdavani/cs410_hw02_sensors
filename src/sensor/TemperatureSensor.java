@@ -1,4 +1,4 @@
-package libs;
+package sensor;
 
 import java.util.Random;
 

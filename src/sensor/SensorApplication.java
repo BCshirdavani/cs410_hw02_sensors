@@ -11,6 +11,7 @@ import javax.swing.JPanel;
 import javax.swing.border.TitledBorder;
 
 public class SensorApplication extends JFrame {
+	public Sensor[] sensors = {new TempSensorAdapter(new TemperatureSensor())};
 	
 	public SensorApplication() {
 		setTitle("Sensor Tracker");
@@ -18,6 +19,8 @@ public class SensorApplication extends JFrame {
 	
 		JPanel  temperaturePnl = new JPanel();
 		temperaturePnl.setBorder(new TitledBorder("Temperature"));
+//		temperaturePnl.setToolTipText(sensors[0].getStatus());
+		System.out.println("Tempurature status: " + sensors[0].getStatus());
 		add(temperaturePnl);
 		
 		setPreferredSize(new Dimension(600,600));
