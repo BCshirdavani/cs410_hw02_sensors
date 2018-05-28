@@ -11,4 +11,11 @@ public class TempSensorAdapter implements Sensor {
 	public String getStatus() {
 		return adaptee.getTempReport();
 	}
+
+	@Override
+	public double getValue() {
+		return adaptee.senseTemperature();
+	}
+
+
 }
