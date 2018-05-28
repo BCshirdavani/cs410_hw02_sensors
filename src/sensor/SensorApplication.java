@@ -15,7 +15,7 @@ public class SensorApplication extends JFrame {
 	
 	public SensorApplication() {
 		setTitle("Sensor Tracker");
-		setLayout(new GridLayout(6,1));
+		setLayout(new GridLayout(3,2));
 
 		//================================================================== Tempurature
 		JPanel  temperaturePnl = new JPanel();

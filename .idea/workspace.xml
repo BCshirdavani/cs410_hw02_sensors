@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d02eff5-6691-4194-b1f7-2512403f7210" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sensor/PressSensorAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sensor/RadSensorAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cs410_hw02_sensors/sensor/SensorApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cs410_hw02_sensors/sensor/SensorApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sensor/SensorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sensor/SensorApplication.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,8 +37,8 @@
           <file leaf-file-name="SensorApplication.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/sensor/SensorApplication.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="685">
-                  <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+                <state relative-caret-position="170">
+                  <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1533#1534#0" expanded="true" />
@@ -627,8 +623,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sensor/SensorApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+        <state relative-caret-position="170">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1533#1534#0" expanded="true" />
