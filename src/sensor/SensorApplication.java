@@ -9,7 +9,9 @@ import javax.swing.JPanel;
 import javax.swing.border.TitledBorder;
 
 public class SensorApplication extends JFrame {
-	public Sensor[] sensors = {new TempSensorAdapter(new TemperatureSensor())};
+	public Sensor[] sensors = {new TempSensorAdapter(new TemperatureSensor()),
+			new PressSensorAdapter(new PressureSensor()),
+			new RadSensorAdapter(new RadiationSensor())};
 	
 	public SensorApplication() {
 		setTitle("Sensor Tracker");
@@ -38,18 +40,37 @@ public class SensorApplication extends JFrame {
 
 		//================================================================== Pressure
 		JPanel  pressurePnl = new JPanel();
-		pressurePnl.setBorder(new TitledBorder("Pressure"));
-		System.out.println("Pressure status: " + sensors[0].getStatus());
-		System.out.println("Pressure value: " + sensors[0].getValue());
+		double presVal = sensors[1].getValue();
+		String presStatus = sensors[1].getStatus();
+		JLabel presText = new JLabel("Pressure Sensor (" + presStatus + ") --> " + presVal);
+		pressurePnl.add(presText);
 		add(pressurePnl);
 
+		if(presStatus.equals("OK")){
+			GreenShape presShape = new GreenShape();
+			add(presShape);
+		}
+		else{
+			RedShape presShape = new RedShape();
+			add(presShape);
+		}
 
 		//================================================================== Ratiation
 		JPanel  radiationPnl = new JPanel();
-		radiationPnl.setBorder(new TitledBorder("Radiation"));
-		System.out.println("Radiation status: " + sensors[0].getStatus());
-		System.out.println("Radiation value: " + sensors[0].getValue());
+		double radVal = sensors[2].getValue();
+		String radStatus = sensors[2].getStatus();
+		JLabel radText = new JLabel("Radiation Sensor (" + radStatus + ") --> " + radVal);
+		radiationPnl.add(radText);
 		add(radiationPnl);
+		if(radStatus.equals("OK")){
+			GreenShape radShape = new GreenShape();
+			add(radShape);
+		}
+		else{
+			RedShape radShape = new RedShape();
+			add(radShape);
+		}
+
 
 
 		setPreferredSize(new Dimension(600,600));
